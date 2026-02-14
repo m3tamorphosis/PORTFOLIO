@@ -1,3 +1,7 @@
+'use client';
+
+import { useState } from 'react';
+
 const GitHubIcon = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -39,6 +43,39 @@ const MailIcon = () => (
   </svg>
 );
 
+const CopyIcon = () => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="16"
+    height="16"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+  >
+    <rect width="14" height="14" x="8" y="8" rx="2" ry="2" />
+    <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2" />
+  </svg>
+);
+
+const CheckIcon = () => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="16"
+    height="16"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+  >
+    <polyline points="20 6 9 17 4 12" />
+  </svg>
+);
+
 const contactLinks = [
   {
     name: 'LinkedIn',
@@ -51,6 +88,7 @@ const contactLinks = [
     href: 'mailto:carldharo02@gmail.com',
     icon: MailIcon,
     description: 'carldharo02@gmail.com',
+    copyable: 'carldharo02@gmail.com',
   },
   {
     name: 'GitHub',
@@ -61,6 +99,16 @@ const contactLinks = [
 ];
 
 export default function Contact() {
+  const [copied, setCopied] = useState(false);
+
+  const handleCopy = async (e: React.MouseEvent, text: string) => {
+    e.preventDefault();
+    e.stopPropagation();
+    await navigator.clipboard.writeText(text);
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2000);
+  };
+
   return (
     <section id="contact" className="py-20 px-6">
       <div className="max-w-2xl mx-auto">
@@ -87,10 +135,19 @@ export default function Contact() {
                 <div className="w-12 h-12 rounded-lg bg-[#111118] border border-[#1f1f2e] flex items-center justify-center text-[#9ca3af] group-hover:text-[#7c3aed] transition-colors">
                   <link.icon />
                 </div>
-                <div>
+                <div className="flex-1">
                   <div className="text-white font-medium">{link.name}</div>
                   <div className="text-[#9ca3af] text-sm">{link.description}</div>
                 </div>
+                {link.copyable && (
+                  <button
+                    onClick={(e) => handleCopy(e, link.copyable!)}
+                    className="p-2 rounded-lg bg-[#111118] border border-[#1f1f2e] text-[#9ca3af] hover:text-[#7c3aed] hover:border-[#7c3aed] transition-colors"
+                    title="Copy email"
+                  >
+                    {copied ? <CheckIcon /> : <CopyIcon />}
+                  </button>
+                )}
               </a>
             ))}
           </div>

@@ -51,7 +51,7 @@ export default function Hero() {
 
         {/* Role with typing animation */}
         <div className="text-2xl md:text-3xl text-[#9ca3af] mb-6 h-10">
-          <span>Junior Data Analyst </span>
+          <span>Data Analyst </span>
           <span className="text-[#7c3aed]">{displayText}</span>
           <span className="typing-cursor text-[#7c3aed]">|</span>
         </div>

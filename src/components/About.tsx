@@ -23,15 +23,14 @@ export default function About() {
 
             <div className="space-y-4 text-[#9ca3af] leading-relaxed">
               <p>
-                Hello! I&apos;m Carl John D. Haro, a Data Analyst with hands-on experience in data
-                engineering and cloud technologies. I specialize in SQL, Python, Power BI, Excel,
-                AWS, and Azure with a strong background in data modeling, ETL processes, and
-                interactive dashboard development.
+                Hello! I&apos;m Carl John D. Haro, a Data Analyst experienced in working with SQL,
+                Excel, and Power BI to clean data, prepare reports, and build dashboards for
+                monitoring performance and trends.
               </p>
               <p>
-                I&apos;m passionate about building scalable analytics solutions and continuously
-                improving cloud-based data systems. I transform complex datasets into actionable
-                insights that support data-driven decision-making.
+                I&apos;m familiar with data preparation tasks including SQL transformations and
+                basic ETL workflows using Python and cloud platforms. I enjoy translating raw
+                datasets into clear insights that support decision-making.
               </p>
             </div>
 

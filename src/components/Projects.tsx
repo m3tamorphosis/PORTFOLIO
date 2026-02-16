@@ -1,38 +1,38 @@
 const projects = [
   {
-    title: 'Danger Zone — Disaster Simulation Game',
+    title: 'Danger Zone — First-Person Disaster Simulation Game',
     description:
-      'Thesis project integrating Unity with Firebase Authentication and Realtime Database for authentication and real-time data syncing, while assisting in UI/UX and gameplay system design.',
-    tags: ['UNITY', 'FIREBASE', 'C#'],
+      'Thesis project integrating Unity with Firebase Authentication & Realtime Database to enable secure login, real-time syncing, and persistent player progress in a playable web demo.',
+    tags: ['UNITY', 'FIREBASE AUTH', 'FIREBASE REALTIME DB'],
     color: '#ef4444',
     link: 'https://dangerzone.vercel.app/',
   },
   {
-    title: 'Climate & Agriculture Analytics Pipeline',
+    title: 'Climate & Agriculture Data Analytics Pipeline',
     description:
-      'Built a complete cloud-based analytics pipeline using AWS, Snowflake, and Power BI Fabric, handling data ingestion, cleaning, transformation, and interactive dashboard reporting.',
-    tags: ['AWS S3', 'SNOWFLAKE', 'POWER BI'],
+      'Built an end-to-end cloud pipeline ingesting and transforming environmental datasets into analytics dashboards showing climate and agriculture trends.',
+    tags: ['AWS S3', 'SNOWFLAKE', 'SQL', 'POWER BI FABRIC', 'ETL'],
     color: '#22c55e',
   },
   {
-    title: 'Loan Default & Financial Risk Dashboard',
+    title: 'Loan Default & Financial Risk Analytics Dashboard',
     description:
-      'Built end-to-end dashboards for loan default and financial risk analysis, integrating SQL Server/MySQL data, Dataflow Gen1, and advanced DAX measures.',
-    tags: ['POWER BI FABRIC', 'DAX', 'SQL'],
+      'Developed dashboards analyzing borrower behavior and default risk using modeled financial datasets and advanced measures.',
+    tags: ['POWER BI', 'DAX', 'SQL SERVER', 'MYSQL', 'DATAFLOW GEN1'],
     color: '#7c3aed',
   },
   {
-    title: 'Azure SQL + Power BI Analytics Project',
+    title: 'End-to-End Azure SQL + Power BI Analytics Project',
     description:
-      'Built a cloud data pipeline with Azure SQL, SSMS, and Power BI, performing CSV import, SQL data cleaning, DAX calculations, and interactive dashboard visualizations.',
-    tags: ['AZURE SQL', 'SSMS', 'POWER BI'],
+      'Created a cloud data workflow for importing, cleaning, modeling, and visualizing business performance data.',
+    tags: ['AZURE SQL', 'SSMS', 'T-SQL', 'POWER BI', 'DAX'],
     color: '#3b82f6',
   },
   {
     title: 'Café Sales Performance Dashboard',
     description:
-      'Developed an interactive café sales dashboard analyzing revenue, orders, top-selling items, and customer behavior, with data cleaning using Pandas and visualization in Power BI.',
-    tags: ['POWER BI', 'PYTHON', 'PANDAS'],
+      'Analyzed transactional sales data to identify revenue trends and customer purchasing patterns.',
+    tags: ['PYTHON', 'PANDAS', 'POWER BI', 'CSV DATA MODELING'],
     color: '#f59e0b',
   },
 ];

@@ -25,7 +25,7 @@ const projects = [
     title: 'End-to-End Azure SQL + Power BI Analytics Project',
     description:
       'Created a cloud data workflow for importing, cleaning, modeling, and visualizing business performance data.',
-    tags: ['AZURE SQL', 'SSMS', 'T-SQL', 'POWER BI', 'DAX'],
+    tags: ['AZURE SQL', 'SSMS', 'POWER BI', 'DAX'],
     color: '#3b82f6',
   },
   {
